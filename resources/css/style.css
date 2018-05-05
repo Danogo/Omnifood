@@ -79,7 +79,6 @@ h2::after {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 30px;
 }
 
 .box p {
@@ -182,4 +181,52 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/*--------------------------------------------*/
+/* SECTION FEATURES */
+/*--------------------------------------------*/
+
+.section-features .long-copy {
+   margin-bottom: 30px;
+}
+
+/*--------------------------------------------*/
+/* SECTION MEALS */
+/*--------------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    /* Scale to 1.03 to get rid of white line at the bottom */
+    transform: scale(1.03);
+    opacity: 1;
 }
