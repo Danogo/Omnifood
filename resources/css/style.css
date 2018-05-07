@@ -14,13 +14,15 @@
     outline: none;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix::after {
