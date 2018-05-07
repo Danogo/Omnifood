@@ -1,8 +1,14 @@
 // Vars for fixed nav
 const content = document.querySelector('.section-features');
+const nav = document.querySelector('nav');
 const threshold = content.offsetTop - 60;
 // Vars for smooth scrolling
 const anchors = document.querySelectorAll('header a');
+//Vars for responsive navigation
+const hamBtn = document.querySelector('.ham-btn');
+const navList = document.querySelector('.main-nav');
+
+
 // fixed nav logic
 const fixNav = () => {
     if(window.scrollY >= threshold) {
@@ -17,8 +23,14 @@ function scrollIt(element) {
     window.scrollTo({
         'behavior': 'smooth',
         'left': 0,
-        'top': element.offsetTop - 60
+        'top': element.offsetTop - nav.offsetHeight
     });
+}
+
+//responsive navigation
+function navToggle() {
+    this.classList.toggle('ham-btn--switch');
+    navList.classList.toggle('nav--visible');
 }
 
 //add event listeners
@@ -29,5 +41,7 @@ anchors.forEach( anchor => {
         scrollIt(elScrollTo);
     });
 });
+
+hamBtn.addEventListener('click', navToggle);
 
 window.addEventListener('scroll', fixNav);
