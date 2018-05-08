@@ -165,13 +165,19 @@
     section {
         padding: 25px 0;
     }
-    .contact-form {
-        width: 100%;
+    /* meals photos section */
+      .meals-showcase li {
+        width: 50%;
     }
+    /* steps section */
     .works-step p {
         padding-top: 0;
     }
     .steps-box a img {
         height: 40px;
+    }
+    /* contact section */
+    .contact-form {
+        width: 100%;
     }
 }
