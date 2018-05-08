@@ -1,5 +1,4 @@
 /* Big tablets and above - 1024px to 1200px */
-
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
         width: 100%;
@@ -11,7 +10,6 @@
 }
 
 /* Small tablets to big tablets - 768px to 1023px */
-
 @media only screen and (max-width: 1023px) {
     body {
         font-size: 18px;
@@ -63,7 +61,6 @@
 }
 
 /* Small phones to small tablets - 481px to 767px */
-
 @media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
@@ -161,9 +158,35 @@
     ul.social-links {
         float: left;
     }
-    
 }
-@media only screen and (max-width: 568px) and (orientation: landscape) {
+
+/* lanscape orientation */
+@media only screen and (min-width: 568px) and (max-width: 812px) and (orientation: landscape) {
+    .row {
+        padding: 0 3%;
+    }
+
+    .main-nav.nav--visible li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .sticky-nav .main-nav.nav--visible li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+    .hero-text-box {
+        top: 55%;
+    }
     section {
         padding: 25px 0;
     }
@@ -180,10 +203,14 @@
     }
     .main-nav li a:link,
     .main-nav li a:visited {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .hero-text-box .btn-full {
         margin-bottom: 12px;
+    }
+    /* meals photos section */
+    .meals-showcase li {
+        width: 50%;
     }
     /* steps section */
     .works-step p {
@@ -215,7 +242,6 @@
 }
 
 /* Small phones - from 0px to 480px */
-
 @media only screen and (max-width: 480px) {
     section {
         padding: 25px 0;
@@ -233,7 +259,7 @@
     }
     .main-nav li a:link,
     .main-nav li a:visited {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .hero-text-box .btn-full {
         margin-bottom: 12px;
