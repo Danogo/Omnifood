@@ -23,13 +23,13 @@ function scrollIt(element) {
     window.scrollTo({
         'behavior': 'smooth',
         'left': 0,
-        'top': element.offsetTop - nav.offsetHeight
+        'top': element.offsetTop - 60
     });
 }
 
 //responsive navigation
 function navToggle() {
-    this.classList.toggle('ham-btn--switch');
+    hamBtn.classList.toggle('ham-btn--switch');
     navList.classList.toggle('nav--visible');
 }
 
@@ -39,6 +39,8 @@ anchors.forEach( anchor => {
         event.preventDefault();
         let elScrollTo = document.querySelector(this.getAttribute('href'));
         scrollIt(elScrollTo);
+        if (anchor.hasAttribute('class')) { return; }
+        navToggle();
     });
 });
 

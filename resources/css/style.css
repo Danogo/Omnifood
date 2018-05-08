@@ -676,6 +676,17 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+    line-height: 120%;
+}
+footer p:last-child {
+    margin-top: 5px;
+}
+
+footer p i {
+    color: #2ECC71;
+    display: inline-block;
+    margin: 0 4px;
+    font-size: 1.2em;
 }
 
 
