@@ -14,6 +14,8 @@ const thresholdPlans = document.querySelector('.section-plans').offsetTop - 100;
 
 // fixed nav logic and animations
 const fixNav = () => {
+    hamBtn.classList.remove('ham-btn--switch');
+    navList.classList.remove('nav--visible');
     // make nav fixed and animate features
     if(window.scrollY >= thresholdFeatures) {
         document.body.classList.add('sticky-nav');

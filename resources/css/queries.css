@@ -157,6 +157,11 @@
     .steps-box a img {
         height: 45px;
     }
+    /* footer section */
+    ul.social-links {
+        float: left;
+    }
+    
 }
 
 /* Small phones - from 0px to 480px */
@@ -165,8 +170,16 @@
     section {
         padding: 25px 0;
     }
+    /* header section */
+    .logo {
+        height: 50px;
+        margin-top: 16px;
+    }
+    .ham-btn {
+        margin-top: 20px;
+    }
     /* meals photos section */
-      .meals-showcase li {
+    .meals-showcase li {
         width: 50%;
     }
     /* steps section */
@@ -179,5 +192,21 @@
     /* contact section */
     .contact-form {
         width: 100%;
+    }
+    /* footer section */
+    footer {
+        padding: 25px;
+    }
+    footer .row > div, footer ul {
+        width: 100%;
+    }
+    ul.social-links {
+        text-align: center;
+    }
+    footer ul li {
+        margin-bottom: 5px;
+    }
+    footer .row p {
+        margin-top: 5px;
     }
 }
