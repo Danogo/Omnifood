@@ -172,11 +172,21 @@
     }
     /* header section */
     .logo {
-        height: 50px;
+        height: 55px;
         margin-top: 16px;
     }
     .ham-btn {
-        margin-top: 20px;
+        margin-top: 22px;
+    }
+    .main-nav {
+        margin-top: 18px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 1em;
+    }
+    .hero-text-box .btn-full {
+        margin-bottom: 12px;
     }
     /* meals photos section */
     .meals-showcase li {
