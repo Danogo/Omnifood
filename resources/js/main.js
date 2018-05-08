@@ -1,20 +1,32 @@
 // Vars for fixed nav
 const content = document.querySelector('.section-features');
 const nav = document.querySelector('nav');
-const threshold = content.offsetTop - 60;
+const thresholdFeatures = content.offsetTop - 60; //minus height of the nav bar
 // Vars for smooth scrolling
 const anchors = document.querySelectorAll('header a');
 //Vars for responsive navigation
 const hamBtn = document.querySelector('.ham-btn');
 const navList = document.querySelector('.main-nav');
-
+//Vars for animation
+const features = document.querySelectorAll('.section-features .row div');
+const thresholdSteps = document.querySelector('.section-steps').offsetTop - 80;
+const thresholdPlans = document.querySelector('.section-plans').offsetTop - 100;
 
 // fixed nav logic
 const fixNav = () => {
-    if(window.scrollY >= threshold) {
+    if(window.scrollY >= thresholdFeatures) {
         document.body.classList.add('sticky-nav');
+        features.forEach( el => {
+            el.classList.add('animated', 'fadeIn');
+        });
     } else {
         document.body.classList.remove('sticky-nav');
+    }
+    if (window.scrollY >= thresholdSteps) {
+        document.querySelector('.app-screen').classList.add('animated', 'fadeInUp');
+    }
+    if (window.scrollY >= thresholdPlans) {
+        document.querySelector('.plan-box').classList.add('animated', 'pulse');
     }
 };
 

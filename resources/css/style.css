@@ -351,6 +351,14 @@ header {
     margin-bottom: 30px;
 }
 
+.section-features .row div {
+    opacity: 0;
+}
+
+.section-features .row div.animated {
+    opacity: 1;
+}
+
 /*--------------------------------------------*/
 
 /* SECTION MEALS */
@@ -416,6 +424,11 @@ header {
 
 .app-screen {
     width: 40%;
+    visibility: hidden;
+}
+
+.app-screen.animated {
+    visibility: inherit;
 }
 
 .works-step {
